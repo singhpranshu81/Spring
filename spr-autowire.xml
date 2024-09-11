@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <!-- bean definitions here -->
+<bean id="car" class="com.mph.autowiring.Car">
+		<property name="name" value="BMW" />
+		<property name="model" value="X5" />
+		</bean>
+		
+	<bean id="user" class="com.mph.autowiring.User" autowire="constructor">
+		<constructor-arg name="username" value="Pranshu" />
+	<!--	<property name="car" ref="car" />-->
+	</bean>	
+		
+		
+</beans>
