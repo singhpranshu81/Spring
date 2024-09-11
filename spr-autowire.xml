@@ -5,15 +5,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-	<context:annotation-config></context:annotation-config>
+<context:annotation-config></context:annotation-config>
     <!-- bean definitions here -->
 <bean id="car" class="com.mph.autowiring.Car">
 		<property name="name" value="BMW" />
 		<property name="model" value="X5" />
 		</bean>
 		
-	<bean id="user" class="com.mph.autowiring.User" autowire="constructor">
-		<constructor-arg name="username" value="Pranshu" />
+	<bean id="user" class="com.mph.autowiring.User">
+		<property name="username" value="Pranshu" />
 	<!--	<property name="car" ref="car" />-->
 	</bean>	
 		
