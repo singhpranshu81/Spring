@@ -18,21 +18,21 @@
 			<form action="updateEmp" method="post">
 				<div class="form-group">
 					<label for="eid">EmployeeID</label><input type="text"
-						class="form-control" value="${param.eid}" name="txteid" id="eid" readonly="readonly">
+						class="form-control" value="${param.eid}" name="eid" id="eid" readonly="readonly">
 				</div>
 				<div class="form-group">
 					<label for="ename">EmployeeName</label><input type="text"
-						class="form-control" name="txtename" value="${param.ename}" id="ename"
+						class="form-control" name="ename" value="${param.ename}" id="ename"
 						>
 				</div>
 				<div class="form-group">
 					<label for="email">Email address</label><input type="email"
-						name="txtemail" class="form-control" value="${param.email}" id="email"
+						name="email" class="form-control" value="${param.email}" id="email"
 						>
 				</div>
 				<div class="form-group">
 					<label for="gender">Gender</label><input type="text"
-						name="txtgender" value="${param.gender}" class="form-control" id="gender">
+						name="gender" value="${param.gender}" class="form-control" id="gender">
 				</div>
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Update
